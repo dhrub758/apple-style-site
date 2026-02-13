@@ -102,3 +102,36 @@ nav button {
   background: white;
   color: black;
 }
+
+@media (max-width: 768px) {
+  nav {
+    padding: 20px;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .product h2 {
+    font-size: 32px;
+  }
+}
+
+.business {
+  height: 80vh;
+  background: #f8fafc;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.business h2 {
+  font-size: 48px;
+}
+
+.blog {
+  height: 60vh;
+  background: white;
+  text-align: center;
+  padding-top: 100px;
+}
+

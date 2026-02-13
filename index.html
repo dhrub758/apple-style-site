@@ -16,6 +16,11 @@
   <section class="hero">
 
 <section class="product fade">
+<section class="business fade">
+  <h2>What We Do</h2>
+  <p>Web • Apps • Branding</p>
+</section>
+
   <h2>Our Flagship</h2>
   <p>Minimal. Powerful. Beautiful.</p>
   <div class="phone">📱</div>
@@ -25,6 +30,11 @@
     <p>Premium digital experiences for the next generation.</p>
    <button class="nav-btn" onclick="toggleDark()">🌙</button>
   </section>
+
+<section class="blog fade">
+  <h2>From Our Blog</h2>
+  <p>Launching soon...</p>
+</section>
 
 <script>
 const observer = new IntersectionObserver(entries => {
@@ -44,6 +54,12 @@ function toggleDark() {
 }
 </script>
 
+<script>
+window.addEventListener("scroll", () => {
+  document.querySelector(".hero").style.backgroundPositionY =
+    window.scrollY * 0.5 + "px";
+});
+</script>
 
 
 </body>
