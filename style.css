@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: #f5f7fb;
+  color: #111;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 80px;
+  align-items: center;
+}
+
+nav h1 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+nav button {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.hero {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 64px;
+  font-weight: 700;
+}
+
+.hero p {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #555;
+}
+
+.main-btn {
+  margin-top: 25px;
+  padding: 14px 30px;
+  background: linear-gradient(135deg,#4f46e5,#9333ea);
+  border: none;
+  border-radius: 30px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.fade {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 1s ease;
+}
+
+.fade.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.product {
+  height: 100vh;
+  background: white;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.product h2 {
+  font-size: 48px;
+}
+
+.phone {
+  font-size: 120px;
+  margin-top: 40px;
+}
+
+.dark {
+  background: #0f172a;
+  color: white;
+}
+
+.dark .product {
+  background: #020617;
+}
+
+.dark nav button {
+  background: white;
+  color: black;
+}

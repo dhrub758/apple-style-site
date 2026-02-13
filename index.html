@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dhruv Studio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav>
+    <div class="logo">Dhruv</div>
+    <button class="nav-btn">Get Started</button>
+  </nav>
+
+  <section class="hero">
+
+<section class="product fade">
+  <h2>Our Flagship</h2>
+  <p>Minimal. Powerful. Beautiful.</p>
+  <div class="phone">📱</div>
+</section>
+
+    <h1>Design. Code. Create.</h1>
+    <p>Premium digital experiences for the next generation.</p>
+   <button class="nav-btn" onclick="toggleDark()">🌙</button>
+  </section>
+
+<script>
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    }
+  });
+});
+
+document.querySelectorAll(".fade").forEach(el => observer.observe(el));
+</script>
+
+<script>
+function toggleDark() {
+  document.body.classList.toggle("dark");
+}
+</script>
+
+
+
+</body>
+</html>
